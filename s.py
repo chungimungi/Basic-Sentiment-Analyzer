@@ -12,7 +12,7 @@ llm = OpenAI(openai_api_key=openai_api_key)
 agent = create_csv_agent(llm=llm, path="sa.csv", verbose=True)
 
 # Read the customer reviews from the file
-df = pd.read_csv("IMDB Dataset.csv.csv")
+df = pd.read_csv("sa.csv")
 
 # Create a Streamlit app
 st.title("Customer Reviews Sentiment Analysis")
